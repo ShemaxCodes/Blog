@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get "/index", to: "posts#index"
   get "/new", to: "posts#new"
+  post "/new", to: "posts#create"
 
 
 

@@ -16,7 +16,11 @@ end
 
 
 def create
-
+@post = Post.new
+if @post.save 
+    posts << @post 
+redirect to index_path
+end 
 end 
 
 

@@ -17,7 +17,7 @@ end
 
 def create
     @post = Post.new(post_params)
-    byebug
+    #byebug
         if @post.save  
             redirect_to posts_path
         else

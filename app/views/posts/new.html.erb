@@ -1,6 +1,6 @@
 <h2> Create New Post </h2>
 
-<%= form_with do |f| %>
+<%= form_with(model: @post, method: :post) do |f| %>
 <%= f.label :title, "Title of Post"  %>
 <%= f.text_field :title %>
 <br>

@@ -17,8 +17,9 @@ end
 
 def create
     @post = Post.new(post_params)
+    byebug
         if @post.save  
-            redirect to index_path
+            redirect_to posts_path
         else
             render :new 
         end 
@@ -41,7 +42,7 @@ end
 private
  
 def post_params
-    params.permit(:title, :body)
+    params.require(:post).permit(:title, :body)
 end
 
 

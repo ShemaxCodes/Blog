@@ -2,10 +2,68 @@
 <html>
   <head>
     <title>ShemaxCodes</title>
-    
-  </head>
 
-  <body>
+	<link href="styless.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+  
+  /*date color: #3498db;
+  h2 color: #2c3e50;
+  font source sans pro
+  */
+  
+  
+  body {
+    margin: 20px auto;
+    border: 5px solid #bdc3c7;
+    border-width: 25px;
+    padding: 20px;
+    width: 700px;
+    font-family: 'Source Sans Pro', sans-serif;
+  
+  }
+  
+  h2 {
+    color: #2c3e50;
+  }
+  
+  .date {
+    text-transform: uppercase;
+    color: #3498db;
+  }
+  
+  
+  .line1 {
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+  
+  }
+  </style>
+</head>
+<body>
+
+<div class="article">
+	<p class="date">November 23 2020</p>
+	<h2>This Is My First Article</h2>
+	<p class="line1">Bacon ipsum dolor amet drumstick beef ribs venison, ham hock biltong pork belly jowl pastrami. Short ribs beef ribs pork chop, strip steak cow shoulder corned beef salami kevin. Shankle rump alcatra, pork belly leberkas sausage fatback. Turkey shank kielbasa bresaola, pancetta leberkas pork alcatra. </p>
+
+<p>Frankfurter kevin cupim picanha. Drumstick chislic t-bone buffalo pork chop hamburger kevin tri-tip meatball rump strip steak. Turducken cupim drumstick meatball, jowl chuck beef ball tip shankle chislic brisket landjaeger. Ribeye cupim salami kevin biltong, chicken ground round turducken tail pork rump. <br><br>
+
+Beef ribs kevin beef capicola t-bone pastrami rump landjaeger sirloin doner meatball drumstick chuck. Drumstick ground round porchetta bresaola kielbasa t-bone turkey tri-tip, corned beef jerky shoulder ham pastrami. Kevin corned beef burgdoggen drumstick ground round chicken pork chop turducken venison tri-tip ham hock bresaola jerkyt</p>
+</div>	
+
+<hr>
+
+
+<div id="article2">
+	<p class="date">December 11 2020</p>
+	<h2>This Is My First Article</h2>
+	<p>Bacon ipsum dolor amet drumstick beef ribs venison, ham hock biltong pork belly jowl pastrami. Short ribs beef ribs pork chop, strip steak cow shoulder corned beef salami kevin. Shankle rump alcatra, pork belly leberkas sausage fatback. Turkey shank kielbasa bresaola, pancetta leberkas pork alcatra.<br><br>
+
+Frankfurter kevin cupim picanha. Drumstick chislic t-bone buffalo pork chop hamburger kevin tri-tip meatball rump strip steak. Turducken cupim drumstick meatball, jowl chuck beef ball tip shankle chislic brisket landjaeger. Ribeye cupim salami kevin biltong, chicken ground round turducken tail pork rump. <br><br>
+Beef ribs kevin beef capicola t-bone pastrami rump landjaeger sirloin doner meatball drumstick chuck. Drumstick ground round porchetta bresaola kielbasa t-bone turkey tri-tip, corned beef jerky shoulder ham pastrami. Kevin corned beef burgdoggen drumstick ground round chicken pork chop turducken venison tri-tip ham hock bresaola jerky</p>
+</div>
+
     <%= yield %>
   </body>
 </html>

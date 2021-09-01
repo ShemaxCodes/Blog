@@ -9,20 +9,17 @@ end
 
 def new 
     @post = Post.new
-    #byebug
 
 end 
 
 
-
 def create
     @post = Post.new(post_params)
-    #byebug
-        if @post.save  
-            redirect_to posts_path
-        else
-            render :new 
-        end 
+    if @post.save  
+        redirect_to posts_path
+    else
+        render :new 
+    end 
 end 
 
 
@@ -31,11 +28,6 @@ def show
     @post = Post.find(params[:id])
 end 
 
-
-
-def destroy
-
-end 
 
 
 

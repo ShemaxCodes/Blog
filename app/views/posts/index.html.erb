@@ -2,15 +2,15 @@
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">Why Software Engineering?</h1>
           <p class="lead my-3">I am excited to be able to share my thoughts and experiences with you in this first post. This is out of my comfort zone, but I feel great about my learning</p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+          <p class="lead mb-0"><a href="/posts/3" class="text-white font-weight-bold">Continue reading...</a></p>
         </div>
       </div>
  <div class="wrapper">     
-<h2>Tips & Experiences </h2>
+<h2 class="heading">Tips & Experiences </h2>
 
 <% @posts.each do |post| %>
 
-<%= link_to post.title, post_path(post) %><br>
+<article><%= link_to post.title, post_path(post) %></article><br>
 
 
 <% end %>

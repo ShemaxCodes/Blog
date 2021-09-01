@@ -29,8 +29,10 @@ def show
 end 
 
 def destroy
-
-end 
+    @post = post.find_by(id: params[:id])
+    @post.destroy
+    redirect_to posts_path
+end
 
 
 

@@ -1,17 +1,17 @@
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Software Engineering?</h1>
-          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+          <h1 class="display-4 font-italic">Why Software Engineering?</h1>
+          <p class="lead my-3">I am excited to be able to share my thoughts and experiences with you in this first post. This is out of my comfort zone, but I feel great about my learning</p>
           <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
         </div>
       </div>
  <div class="wrapper">     
-<h1>All Posts </h1>
+<h2>Tips & Experiences </h2>
 
 <% @posts.each do |post| %>
 
-<%= post.title %><br>
-<%= post.body %><br><br>
+<%= link_to post.title, post_path(post) %><br>
+
 
 <% end %>
 </div>

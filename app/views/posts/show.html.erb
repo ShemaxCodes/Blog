@@ -1,5 +1,5 @@
 <%= @post.title %><br><br>
 <%= @post.body %><br>
 
-<%= link_to "Delete Post", post_path(post), :method => :delete %><br>
+<%= link_to "Delete Post", post_path(@post), :method => :delete %><br>
 <%= link_to 'Back', :back %>

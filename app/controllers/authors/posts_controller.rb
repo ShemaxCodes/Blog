@@ -1,5 +1,4 @@
 module Authors
- 
     class PostsController < AuthorsController
 
 

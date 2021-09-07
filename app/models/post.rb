@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base 
-has_many :authors
+belongs_to :author
 
 
 

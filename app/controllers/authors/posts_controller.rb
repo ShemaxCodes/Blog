@@ -1,6 +1,6 @@
 module Authors
  
-    class PostsController < ApplicationController
+    class PostsController < AuthorsController
 
 
     def index 

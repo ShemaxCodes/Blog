@@ -9,13 +9,13 @@ module Authors
 
 
     def new 
-        @post = Post.new
+        @post = current_author.posts.build
 
     end 
 
 
     def create
-        @post = Post.new(post_params)
+        @post = current_author.posts.build(post_params)
         if @post.save  
             byebug
             redirect_to posts_path

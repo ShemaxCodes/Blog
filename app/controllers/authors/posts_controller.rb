@@ -17,6 +17,7 @@ module Authors
     def create
         @post = Post.new(post_params)
         if @post.save  
+            byebug
             redirect_to posts_path
         else
             render :new 

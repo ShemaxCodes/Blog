@@ -17,7 +17,6 @@ module Authors
     def create
         @post = current_author.posts.build(post_params)
         if @post.save  
-            byebug
             redirect_to posts_path
         else
             render :new 
@@ -31,7 +30,6 @@ module Authors
     end 
 
     def destroy
-        @post = Post.find(params[:id])
         @post.destroy
         redirect_to posts_path
     end
@@ -41,7 +39,7 @@ module Authors
     private
     
     def post_params
-        params.require(:post).permit(:title, :body, :published, :author_id)
+        params.require(:post).permit(:title, :body)
     end
 
     end 
